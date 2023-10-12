@@ -38,3 +38,11 @@ for k, v in dict_of_lists.items():
     print(k, v)  # Print each key and its corresponding list in 'dict_of_lists'
     for element in v:
         print(element)  # Print each element in the sub-list associated with the key
+
+dict_of_dict = {
+    "000": {"1000": "String"},  # Create a dictionary of dictionaries with a nested dictionary for key "000"
+    "001": {"1001": "String"},  # Create another nested dictionary for key "001"
+    "002": {"1002": "String"}   # Create another nested dictionary for key "002"
+}
+
+print(dict_of_dict["000"]["1000"])  # Print the value associated with key "1000" in the nested dictionary under key "000"
